@@ -1,6 +1,6 @@
 <script>
-import ProductCard from './components/ProductCard.vue';
-import ProductsList from './db/dc-comics';
+import ProductCard from '../components/ProductCard.vue';
+import ProductsList from '../db/dc-comics';
 
 export default {
     components: {
@@ -24,10 +24,10 @@ export default {
             <div class="row row-cols-6 g-3">
                 <div class="col" v-for="(product, i) in ProductsList" :key="`product_${i}`">
                     <ProductCard 
-                    :img-src="ProductsList.thumb" 
-                    :product-series="ProductsList.series" 
-                    :product-price="ProductsList.price"
-                    :product-type="ProductsList.type"
+                    :imgSrc="product.thumb"
+                    :series="product.series"
+                    :price="product.price"
+                    :type="product.type"
                     >
                     </ProductCard>
                 </div>

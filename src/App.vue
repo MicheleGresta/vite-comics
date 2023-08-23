@@ -2,7 +2,6 @@
 import TheHeader from './components/TheHeader.vue';
 import TheFooter from './components/TheFooter.vue';
 import TheMain from './components/TheMain.vue';
-import ProductCard from './components/ProductCard.vue';
 import ProductCardsSection from './components/ProductCardsSection.vue';
 
 export default {
@@ -10,7 +9,6 @@ export default {
     TheHeader,
     TheFooter,
     TheMain,
-    ProductCard,
     ProductCardsSection,
 
   },
@@ -24,6 +22,4 @@ export default {
   <TheFooter />
 </template>
 
-<style>
-
-</style>
+<style></style>
