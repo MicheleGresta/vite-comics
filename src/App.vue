@@ -2,19 +2,24 @@
 import TheHeader from './components/TheHeader.vue';
 import TheFooter from './components/TheFooter.vue';
 import TheMain from './components/TheMain.vue';
+import ProductCard from './components/ProductCard.vue';
+import ProductCardsSection from './components/ProductCardsSection.vue';
 
-export default{
+export default {
   components: {
     TheHeader,
     TheFooter,
     TheMain,
+    ProductCard,
+    ProductCardsSection,
 
-  }
-}
+  },
+};
 </script>
 
 <template>
   <TheHeader />
+  <ProductCardsSection />
   <TheMain />
   <TheFooter />
 </template>
