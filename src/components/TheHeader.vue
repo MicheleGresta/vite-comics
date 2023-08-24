@@ -55,4 +55,7 @@ li {
         font-weight: 600;
     }
 }
+.container{
+    padding-bottom: 2rem;
+}
 </style>

@@ -1,6 +1,6 @@
 <script>
 import ProductCard from '../components/ProductCard.vue';
-import ProductsList from '../db/dc-comics';
+import ProductsList from '../db/dc-comics.js';
 
 export default {
     components: {
@@ -21,7 +21,7 @@ export default {
                 <h4> CURRENT SERIES</h4>
             </div>
 
-            <div class="row row-cols-6 g-3">
+            <div class="row row-cols-6 g-3 py-5">
                 <div class="col" v-for="(product, i) in ProductsList" :key="`product_${i}`">
                     <ProductCard 
                     :imgSrc="product.thumb"
@@ -47,6 +47,7 @@ export default {
     .card-title {
 
         position: relative;
+        
 
         h4 {
             background-color: $color-primary;
